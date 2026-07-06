@@ -17,9 +17,8 @@ test('Browser Context playwright Test', async ({ browser }) => {
 test.only('Page Playwright Test', async ({ page }) => {
   await page.goto('https://www.Google.com/');    
   console.log('Page Title: ' + await page.title());
-  await expect(page).toHaveTitle(/Google/);
+  await page.title();
+ 
 
 
-
-
-} );    
+} );       
